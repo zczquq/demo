@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+<!--    引入配置文件-->
+    <properties resource="jdbc.properties"/>
+
+    <typeAliases>
+        <!--类型别名不区分大小写-->
+        <!--<typeAlias type="org.example.entity.User" alias="User"/>-->
+        <!--以包为单位将包下所有单位设置默认的类型别名，即类名且不区分大小写-->
+        <package name="org.example.entity"/>
+    </typeAliases>
+
+
+    <!--environments标签：配置多个连接数据库的环境-->
+    <!--default 属性：设置默认连接的数据库环境的id-->
+    <!--环境配置，连接的数据库，这里使用的是MySQL-->
+    <environments default="dev">
+        <!--
+            environment 属性：配置某个具体的环境
+            id:表示连接数据库的唯一标识，不能重复
+        -->
+        <environment id="dev">
+            <!--指定事务管理的类型，这里简单使用Java的JDBC的提交和回滚设置，需要手动处理-->
+            <!--
+                type:
+                    1.JDBC:表示使用原生JDBC事务提交方式
+                    2.MANAGED:被管理，如和spring进行整合时的声明式事务
+            -->
+            <transactionManager type="JDBC"/>
+            <!--dataSource 指连接源配置，
+                POOLED是JDBC连接对象的数据源连接池的实现，缓存数据库连接
+                UNPOOLED表示不使用数据库连接池
+                JNDI使用上下文中的数据源
+            -->
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+        
+        <environment id="test">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--引入映射文件-->
+    <mappers>
+<!--        <mapper resource="mappers/UserMapper.xml"/>-->
+        <!-- 
+            以包为单位引入映射文件
+            要求：
+                1.mapper接口所在的包名要和xml映射文件所在的包名一致
+                2.mapper接口要和映射文件的名字一致
+         -->
+        <package name="org.example.mapper"/>
+    </mappers>
+</configuration>

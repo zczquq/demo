@@ -1,0 +1,15 @@
+2024-05-17 11:53:40.313  INFO 7900 --- [main] o.e.controller.EmployeeControllerTest    : Starting EmployeeControllerTest using Java 1.8.0_321 on LAPTOP-2D83ORTF with PID 7900 (started by 16339 in D:\Code\IdeaProjects\LocalProjects\framework_parent\springboot)
+2024-05-17 11:53:40.314  INFO 7900 --- [main] o.e.controller.EmployeeControllerTest    : The following 1 profile is active: "dev"
+2024-05-17 11:53:41.064  INFO 7900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-17 11:53:41.073  INFO 7900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-17 11:53:41.173  INFO 7900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 0 Redis repository interfaces.
+2024-05-17 11:53:46.968  INFO 7900 --- [main] o.e.controller.EmployeeControllerTest    : Started EmployeeControllerTest in 6.972 seconds (JVM running for 8.7)
+2024-05-17 11:53:46.973  INFO 7900 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-05-17 11:53:54.494  INFO 19436 --- [main] o.e.controller.EmployeeControllerTest    : Starting EmployeeControllerTest using Java 1.8.0_321 on LAPTOP-2D83ORTF with PID 19436 (started by 16339 in D:\Code\IdeaProjects\LocalProjects\framework_parent\springboot)
+2024-05-17 11:53:54.495  INFO 19436 --- [main] o.e.controller.EmployeeControllerTest    : The following 1 profile is active: "dev"
+2024-05-17 11:53:55.235  INFO 19436 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-17 11:53:55.236  INFO 19436 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-17 11:53:55.273  INFO 19436 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2024-05-17 11:53:59.229  INFO 19436 --- [main] o.e.controller.EmployeeControllerTest    : Started EmployeeControllerTest in 5.217 seconds (JVM running for 6.714)

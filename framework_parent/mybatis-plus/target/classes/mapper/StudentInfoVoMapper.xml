@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.mapper.StudentInfoVoMapper">
+    <resultMap id="StudentInfoMap" type="org.example.vo.StudentInfoVo">
+        <association property="student" javaType="org.example.entity.Student">
+            <id property="id" column="id"/>
+            <result property="name" column="name"/>
+            <result property="sex" column="sex"/>
+            <result property="age" column="age"/>
+        </association>
+        <association property="studentInfo" javaType="org.example.entity.StudentInfo">
+            <id property="id" column="id"/>
+            <result property="school" column="school"/>
+            <result property="subject" column="subject"/>
+            <result property="address" column="address"/>
+        </association>
+    </resultMap>
+
+    <!--自定义规则，resultMap-->
+    <select id="selectList" resultMap="StudentInfoMap">
+        select s.*,si.*
+            from student as s join student_info as si
+            on s.id = si.id
+    </select>
+</mapper>

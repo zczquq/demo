@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.mapper.EmployeeMapper">
+    <!--mapper中嵌套四种标签，insert、delete、update、select-->
+    <!--绑定方法-->
+    <!--${}取参数可能会有SQL注入安全隐患，此方法是直接拼接字符串的方式创建sql语句-->
+    <!--#{e.属性名}取参数不会有SQL注入安全隐患，用？作为占位符，然后预编译SQL，取值填充可以防止SQL注入安全隐患问题-->
+    <insert id="insertAndReturnId">
+        insert into employee (account_name, password, nick_name, real_name, sex, hiredate, role, status) values (#{e.accountName}, #{e.password}, #{e.nickName}, #{e.realName}, #{e.sex}, #{e.hiredate}, #{e.role}, #{e.status})
+    </insert>
+</mapper>

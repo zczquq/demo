@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.zcz.mapper.UserMapper">
+
+    <insert id="insertUser">
+        insert into user default values
+    </insert>
+
+    <insert id="insert">
+        insert into user default values
+    </insert>
+    <delete id="delete"></delete>
+    <select id="getAllUser" resultType="org.zcz.entity.User">
+        select * from user
+    </select>
+</mapper>

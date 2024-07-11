@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.zcz.mapper.StudentMapper">
+
+    <resultMap id="userResultMap" type="Student">
+        <result column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="sex" property="sex"/>
+        <result column="age" property="age"/>
+        <collection property="exams" ofType="Exam">
+            <result property="id" column="exam_id"/>
+            <result property="studentId" column="studentId"/>
+            <result property="course" column="course"/>
+            <result property="score" column="score"/>
+        </collection>
+    </resultMap>
+
+    <select id="selectUserById" resultMap="userResultMap">
+        select s.id,s.name,s.sex,s.age,e.id as exam_id,e.studentId,e.course,e.score
+        from student as s
+        inner join exam as e on s.id = e.studentId
+        where s.id = #{id}
+    </select>
+</mapper>

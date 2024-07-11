@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.mapper.ParameterMapper">
+    <insert id="insertUser">
+        insert into user values(null,#{username},#{password},null)
+    </insert>
+
+    <select id="getAllUser" resultType="User">
+        select * from user
+    </select>
+
+    <select id="getUserByUsername" resultType="User">
+-- #号、$号内参数名任意，注意'${}'外加''引号表示拼接字符串
+        select * from user where username = '${username}'
+    </select>
+
+    <select id="checkLogin" resultType="User">
+        select *
+        from user
+        where username = #{arg0} and password = #{arg1};
+    </select>
+
+    <select id="checkLoginMap" resultType="User">
+        select *
+        from user
+        where username = #{username} and password = #{password}
+    </select>
+
+    <select id="checkLoginByParam" resultType="User">
+        select *
+        from user
+        where username = #{username} and password = #{password};
+    </select>
+
+</mapper>
