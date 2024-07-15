@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.example.mapper.SQLMapper">
+
+    <select id="getUserByUserName" resultType="User">
+        <!-- select * from user where username like '%${username}%' -->
+        <!-- select * from user where username like concat('%',#{username},'%') -->
+        <!-- 第三种：双引号直接连接sql-->
+        select * from user where username like "%"#{username}"%"
+    </select>
+
+    <delete id="deleleMore">
+        delete from user where id in (${ids})
+    </delete>
+
+</mapper>

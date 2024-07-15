@@ -14,6 +14,9 @@ public class SelectMapperTest {
      * mybatis的各种查询功能
      * 1.若查询的数据只有一条，可以用对象来接收
      * 2.若查询的数据有多条，一定不能用对象来接收
+     *      1）可以通过实体类类型的list接收
+     *      2）也可以通过map集合接收
+     *      3）@MapKey注解可以将一个字段值作为map的键
      */
 
     /**
@@ -48,6 +51,6 @@ public class SelectMapperTest {
     @Test
     public void testGetAllUserByMap() throws IOException {
         SelectMapper selectMapper = SqlSessionUtils.getSqlSession().getMapper(SelectMapper.class);
-        System.out.println(selectMapper.getAllUserToMap());
+        System.out.println(selectMapper.getAllUserByMap());
     }
 }

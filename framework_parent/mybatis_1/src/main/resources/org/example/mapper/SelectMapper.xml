@@ -19,9 +19,7 @@
         select * from user where id = #{id}
     </select>
 
-    <select id="getAllUserToMap" resultType="java.util.Map">
-        select * from user;
+    <select id="getAllUserByMap" resultType="map">
+        select * from user
     </select>
-
-
 </mapper>

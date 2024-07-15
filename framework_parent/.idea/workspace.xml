@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="204c45c6-9733-4df1-883e-ce63dfc01597" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="mybatis-config" />
+        <option value="FxmlFile" />
+        <option value="mybatis-mapper" />
+        <option value="Interface" />
+        <option value="Mybatis Mapper" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="D:\ASoftware\JetBrains\IntelliJ IDEA 2022.1.3\plugins\maven\lib\maven3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2f79nNivlTYxd839WGM67ft5tHo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.ParameterMapperTest.testCheckLogin.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ParameterMapperTest.testCheckLoginByParam.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.ParameterMapperTest.testCheckLoginMap.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ParameterMapperTest.testGetUserByUsername.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ParameterMapperTest.testInsertUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SQLMapperTest.testGetUserByUsername.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SelectMapperTest.testGetAllUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SelectMapperTest.testGetAllUserByMap.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SelectMapperTest.testGetCountUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SelectMapperTest.testGetUserByIdToMap.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SelectMapperTest.testSelectMapper.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserMapperTest.testGetAllUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserMapperTest.testSelectAllUser.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Code/IdeaProjects/LocalProjects/framework_parent/mybatis/src/main/java/org/zcz/entity&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;94a24dee31ae90e4d9cd9395c1c05acf&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Code\IdeaProjects\LocalProjects\framework_parent\mybatis\src\main\java\org\zcz\entity" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Code\IdeaProjects\LocalProjects\framework_parent\mybatis_1\src\main\resources\org\example\mapper" />
+      <recent name="D:\Code\IdeaProjects\LocalProjects\framework_parent\mybatis\src\main\resources\mybatis" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.example" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.zcz.beanconfig" />
+      <recent name="org.example.controller" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.config" />
+      <recent name="org.example" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.SQLMapperTest.testDeleteMore">
+    <configuration name="SQLMapperTest.testDeleteMore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.SQLMapperTest" />
+      <option name="METHOD_NAME" value="testDeleteMore" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SQLMapperTest.testGetUserByUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.SQLMapperTest" />
+      <option name="METHOD_NAME" value="testGetUserByUsername" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SelectMapperTest.testGetAllUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.SelectMapperTest" />
+      <option name="METHOD_NAME" value="testGetAllUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SelectMapperTest.testGetAllUserByMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.SelectMapperTest" />
+      <option name="METHOD_NAME" value="testGetAllUserByMap" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SelectMapperTest.testGetUserByIdToMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.SelectMapperTest" />
+      <option name="METHOD_NAME" value="testGetUserByIdToMap" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SQLMapperTest.testDeleteMore" />
+        <item itemvalue="JUnit.SelectMapperTest.testGetAllUserByMap" />
+        <item itemvalue="JUnit.SQLMapperTest.testGetUserByUsername" />
+        <item itemvalue="JUnit.SelectMapperTest.testGetAllUser" />
+        <item itemvalue="JUnit.SelectMapperTest.testGetUserByIdToMap" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="204c45c6-9733-4df1-883e-ce63dfc01597" name="Changes" comment="" />
+      <created>1713141416003</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713141416003</updated>
+      <workItem from="1713141417561" duration="24446000" />
+      <workItem from="1713192293162" duration="1792000" />
+      <workItem from="1713226994174" duration="33938000" />
+      <workItem from="1713313100674" duration="21561000" />
+      <workItem from="1713355465413" duration="2998000" />
+      <workItem from="1713400471499" duration="19021000" />
+      <workItem from="1713486599901" duration="21664000" />
+      <workItem from="1713602105130" duration="1854000" />
+      <workItem from="1713622546253" duration="2499000" />
+      <workItem from="1713664913890" duration="1817000" />
+      <workItem from="1714009346632" duration="4091000" />
+      <workItem from="1714183720784" duration="4875000" />
+      <workItem from="1714264671350" duration="13360000" />
+      <workItem from="1715504524762" duration="822000" />
+      <workItem from="1715647105528" duration="1352000" />
+      <workItem from="1715908126761" duration="5497000" />
+      <workItem from="1716176849664" duration="7637000" />
+      <workItem from="1716253825648" duration="8985000" />
+      <workItem from="1716269961408" duration="5037000" />
+      <workItem from="1716363416489" duration="12230000" />
+      <workItem from="1716423824692" duration="3710000" />
+      <workItem from="1716620077612" duration="1780000" />
+      <workItem from="1719535181642" duration="1994000" />
+      <workItem from="1719542765631" duration="2472000" />
+      <workItem from="1719554497430" duration="3575000" />
+      <workItem from="1719882353131" duration="13411000" />
+      <workItem from="1720053067981" duration="2872000" />
+      <workItem from="1720340868072" duration="6050000" />
+      <workItem from="1720407205056" duration="4207000" />
+      <workItem from="1720486070139" duration="3299000" />
+      <workItem from="1720573187621" duration="16255000" />
+      <workItem from="1720658999356" duration="13424000" />
+      <workItem from="1720711425929" duration="601000" />
+      <workItem from="1720751025027" duration="1192000" />
+      <workItem from="1720838459061" duration="1518000" />
+      <workItem from="1721023086816" duration="4007000" />
+      <workItem from="1721041393990" duration="1000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mybatis_1/src/test/java/org/example/ParameterMapperTest.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
