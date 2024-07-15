@@ -38,4 +38,5 @@ public interface SelectMapper {
 //    List<Map<String,Object>> getAllUserByMap();
     @MapKey("id")
     Map<String,Object> getAllUserByMap();
+
 }
