@@ -44,4 +44,10 @@ public class SelectMapperTest {
         SelectMapper selectMapper = SqlSessionUtils.getSqlSession().getMapper(SelectMapper.class);
         System.out.println(selectMapper.getUserByIdToMap(1));
     }
+
+    @Test
+    public void testGetAllUserByMap() throws IOException {
+        SelectMapper selectMapper = SqlSessionUtils.getSqlSession().getMapper(SelectMapper.class);
+        System.out.println(selectMapper.getAllUserToMap());
+    }
 }
