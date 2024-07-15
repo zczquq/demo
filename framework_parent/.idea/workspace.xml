@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="204c45c6-9733-4df1-883e-ce63dfc01597" name="Changes" comment="" />
+    <list default="true" id="204c45c6-9733-4df1-883e-ce63dfc01597" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis_1/src/main/java/org/example/mapper/SelectMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis_1/src/main/java/org/example/mapper/SelectMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis_1/src/main/resources/org/example/mapper/SelectMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis_1/src/main/resources/org/example/mapper/SelectMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis_1/src/test/java/org/example/SelectMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis_1/src/test/java/org/example/SelectMapperTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +27,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -49,6 +58,7 @@
     "JUnit.ParameterMapperTest.testGetUserByUsername.executor": "Run",
     "JUnit.ParameterMapperTest.testInsertUser.executor": "Run",
     "JUnit.SelectMapperTest.testGetAllUser.executor": "Run",
+    "JUnit.SelectMapperTest.testGetAllUserByMap.executor": "Run",
     "JUnit.SelectMapperTest.testGetCountUser.executor": "Run",
     "JUnit.SelectMapperTest.testGetUserByIdToMap.executor": "Run",
     "JUnit.SelectMapperTest.testSelectMapper.executor": "Run",
@@ -63,6 +73,7 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/Code/IdeaProjects/LocalProjects/framework_parent/mybatis/src/main/java/org/zcz/entity",
@@ -108,23 +119,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SelectMapperTest.testGetUserByIdToMap">
-    <configuration name="ParameterMapperTest.testCheckLoginByParam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis_1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.ParameterMapperTest" />
-      <option name="METHOD_NAME" value="testCheckLoginByParam" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.SelectMapperTest.testGetAllUserByMap">
     <configuration name="SelectMapperTest.testGetAllUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis_1" />
       <extension name="coverage">
@@ -136,6 +131,22 @@
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.SelectMapperTest" />
       <option name="METHOD_NAME" value="testGetAllUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SelectMapperTest.testGetAllUserByMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.SelectMapperTest" />
+      <option name="METHOD_NAME" value="testGetAllUserByMap" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -191,11 +202,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SelectMapperTest.testGetAllUserByMap" />
+        <item itemvalue="JUnit.SelectMapperTest.testGetAllUser" />
         <item itemvalue="JUnit.SelectMapperTest.testGetUserByIdToMap" />
         <item itemvalue="JUnit.SelectMapperTest.testGetCountUser" />
-        <item itemvalue="JUnit.SelectMapperTest.testGetAllUser" />
         <item itemvalue="JUnit.SelectMapperTest.testSelectMapper" />
-        <item itemvalue="JUnit.ParameterMapperTest.testCheckLoginByParam" />
       </list>
     </recent_temporary>
   </component>
@@ -247,6 +258,10 @@
       <workItem from="1720486070139" duration="3299000" />
       <workItem from="1720573187621" duration="16255000" />
       <workItem from="1720658999356" duration="13424000" />
+      <workItem from="1720711425929" duration="601000" />
+      <workItem from="1720751025027" duration="1192000" />
+      <workItem from="1720838459061" duration="1518000" />
+      <workItem from="1721023086816" duration="1107000" />
     </task>
     <servers />
   </component>
