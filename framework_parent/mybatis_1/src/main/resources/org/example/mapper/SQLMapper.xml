@@ -13,4 +13,19 @@
         delete from user where id in (${ids})
     </delete>
 
+    <!-- 字符串数据、日期类型数据、字段名可以加单引号,表名不可用加单引号 -->
+    <select id="getUserByTableName" resultType="User">
+        select * from ${tableName}
+    </select>
+
+    <!--
+        获取自增主键
+        useGeneratedKeys：表示设置当前标签中的sql使用了自增的主键
+        keyProperty：将自增的主键的值赋值给映射文件中参数的某个属性
+    -->
+    <insert id="insertUser" useGeneratedKeys="true" keyProperty="id">
+        insert into user values (null,#{user.username},#{user.password},0)
+    </insert>
+
+
 </mapper>

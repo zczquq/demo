@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.mapper.EmployeeMapper">
+
+    <select id="selectAllEmployee1" resultType="org.example.entity.Employee">
+        select * from t_emp
+    </select>
+
+    <resultMap id="empResultMap" type="org.example.entity.Employee">
+        <id property="id" column="eid"/>
+        <result property="empName" column="emp_name"/>
+        <result property="sex" column="sex"/>
+        <result property="age" column="age"/>
+        <result property="email" column="email"/>
+    <!-- collection处理一对多关系 -->
+    <!-- association处理多对一关系 -->
+    </resultMap>
+
+    <!-- resultMap自定义映射关系 -->
+    <select id="selectAllEmployee" resultMap="empResultMap">
+        select * from t_emp
+    </select>
+</mapper>

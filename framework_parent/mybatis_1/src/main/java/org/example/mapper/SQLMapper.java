@@ -21,4 +21,21 @@ public interface SQLMapper {
      */
     int deleleMore(@Param("ids") String ids);
 
+    /**
+     * 动态设置表名，查询所有用户信息
+     * 查询指定表中的数据
+     * @param tableName
+     * @return
+     */
+    List<User> getUserByTableName(@Param("tableName") String tableName);
+
+    /**
+     * 添加用户信息
+     * @param user
+     * @return
+     */
+    void insertUser(@Param("user") User user);
+
+
+
 }

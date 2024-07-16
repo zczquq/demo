@@ -16,8 +16,8 @@
         <option value="JUnit5 Test Class" />
         <option value="mybatis-config" />
         <option value="FxmlFile" />
-        <option value="mybatis-mapper" />
         <option value="Interface" />
+        <option value="mybatis-mapper" />
         <option value="Mybatis Mapper" />
         <option value="Class" />
       </list>
@@ -45,53 +45,57 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.ParameterMapperTest.testCheckLogin.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ParameterMapperTest.testCheckLoginByParam.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.ParameterMapperTest.testCheckLoginMap.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ParameterMapperTest.testGetUserByUsername.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ParameterMapperTest.testInsertUser.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SQLMapperTest.testGetUserByUsername.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SelectMapperTest.testGetAllUser.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SelectMapperTest.testGetAllUserByMap.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SelectMapperTest.testGetCountUser.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SelectMapperTest.testGetUserByIdToMap.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SelectMapperTest.testSelectMapper.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserMapperTest.testGetAllUser.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserMapperTest.testSelectAllUser.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Code/IdeaProjects/LocalProjects/framework_parent/mybatis/src/main/java/org/zcz/entity&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;94a24dee31ae90e4d9cd9395c1c05acf&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.EmployeeMapperTest.getAllEmp.executor": "Run",
+    "JUnit.ParameterMapperTest.testCheckLogin.executor": "Run",
+    "JUnit.ParameterMapperTest.testCheckLoginByParam.executor": "Debug",
+    "JUnit.ParameterMapperTest.testCheckLoginMap.executor": "Run",
+    "JUnit.ParameterMapperTest.testGetUserByUsername.executor": "Run",
+    "JUnit.ParameterMapperTest.testInsertUser.executor": "Run",
+    "JUnit.SQLMapperTest.testDeleteMore.executor": "Run",
+    "JUnit.SQLMapperTest.testGetUserByTableName.executor": "Run",
+    "JUnit.SQLMapperTest.testGetUserByUsername.executor": "Run",
+    "JUnit.SQLMapperTest.testInsertUser.executor": "Run",
+    "JUnit.SelectMapperTest.testGetAllUser.executor": "Run",
+    "JUnit.SelectMapperTest.testGetAllUserByMap.executor": "Run",
+    "JUnit.SelectMapperTest.testGetCountUser.executor": "Run",
+    "JUnit.SelectMapperTest.testGetUserByIdToMap.executor": "Run",
+    "JUnit.SelectMapperTest.testSelectMapper.executor": "Run",
+    "JUnit.UserMapperTest.testGetAllUser.executor": "Run",
+    "JUnit.UserMapperTest.testSelectAllUser.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Code/IdeaProjects/LocalProjects/framework_parent/mybatis/src/main/java/org/zcz/entity",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
+    "spring.configuration.checksum": "94a24dee31ae90e4d9cd9395c1c05acf",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Code\IdeaProjects\LocalProjects\framework_parent\mybatis\src\main\java\org\zcz\entity" />
@@ -115,7 +119,23 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SQLMapperTest.testDeleteMore">
+  <component name="RunManager" selected="JUnit.EmployeeMapperTest.getAllEmp">
+    <configuration name="EmployeeMapperTest.getAllEmp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.EmployeeMapperTest" />
+      <option name="METHOD_NAME" value="getAllEmp" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SQLMapperTest.testDeleteMore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis_1" />
       <extension name="coverage">
@@ -132,7 +152,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SQLMapperTest.testGetUserByUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SQLMapperTest.testGetUserByTableName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis_1" />
       <extension name="coverage">
         <pattern>
@@ -142,13 +162,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.SQLMapperTest" />
-      <option name="METHOD_NAME" value="testGetUserByUsername" />
+      <option name="METHOD_NAME" value="testGetUserByTableName" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectMapperTest.testGetAllUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SQLMapperTest.testInsertUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis_1" />
       <extension name="coverage">
         <pattern>
@@ -157,8 +177,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.SelectMapperTest" />
-      <option name="METHOD_NAME" value="testGetAllUser" />
+      <option name="MAIN_CLASS_NAME" value="org.example.SQLMapperTest" />
+      <option name="METHOD_NAME" value="testInsertUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -180,29 +200,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectMapperTest.testGetUserByIdToMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis_1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.SelectMapperTest" />
-      <option name="METHOD_NAME" value="testGetUserByIdToMap" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EmployeeMapperTest.getAllEmp" />
+        <item itemvalue="JUnit.SQLMapperTest.testInsertUser" />
+        <item itemvalue="JUnit.SQLMapperTest.testGetUserByTableName" />
         <item itemvalue="JUnit.SQLMapperTest.testDeleteMore" />
         <item itemvalue="JUnit.SelectMapperTest.testGetAllUserByMap" />
-        <item itemvalue="JUnit.SQLMapperTest.testGetUserByUsername" />
-        <item itemvalue="JUnit.SelectMapperTest.testGetAllUser" />
-        <item itemvalue="JUnit.SelectMapperTest.testGetUserByIdToMap" />
       </list>
     </recent_temporary>
   </component>
@@ -259,6 +263,7 @@
       <workItem from="1720838459061" duration="1518000" />
       <workItem from="1721023086816" duration="4007000" />
       <workItem from="1721041393990" duration="1000" />
+      <workItem from="1721097230282" duration="9474000" />
     </task>
     <servers />
   </component>
