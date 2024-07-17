@@ -28,4 +28,10 @@ public class EmployeeMapperTest {
         List<Employee> employeeList = employeeMapper.selectAllEmployee();
         employeeList.forEach(System.out::println);
     }
+
+    @Test
+    public void testGetEmployeeAndDeptById() throws IOException {
+        EmployeeMapper employeeMapper = SqlSessionUtils.getSqlSession().getMapper(EmployeeMapper.class);
+        System.out.println(employeeMapper.getEmployeeAndDeptById(2));
+    }
 }

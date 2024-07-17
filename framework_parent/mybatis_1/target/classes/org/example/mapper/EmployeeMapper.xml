@@ -6,6 +6,16 @@
         select * from t_emp
     </select>
 
+    <!--
+        resultMap：设置自定义映射关系
+        id：唯一标识，不能重复
+        type：设置要指定映射关系的实体类类型
+        子标签：
+            id：设置主键映射关系
+            result：设置普通字段映射关系
+            property：设置映射关系中的属性名，实体类的属性名
+            column：数据库中对应的字段名
+     -->
     <resultMap id="empResultMap" type="org.example.entity.Employee">
         <id property="id" column="eid"/>
         <result property="empName" column="emp_name"/>
@@ -19,5 +29,43 @@
     <!-- resultMap自定义映射关系 -->
     <select id="selectAllEmployee" resultMap="empResultMap">
         select * from t_emp
+    </select>
+
+    <!--
+        处理多对一映射关系方式一：级联属性赋值
+     -->
+    <resultMap id="empAndDeptResultMap" type="org.example.entity.Employee">
+        <id property="id" column="eid"/>
+        <result property="empName" column="emp_name"/>
+        <result property="age" column="age"/>
+        <result property="sex" column="sex"/>
+        <result property="email" column="email"/>
+        <!-- 级联属性赋值处理多对一关系 -->
+        <result property="department.id" column="did"/>
+        <result property="department.name" column="dept_name"/>
+    </resultMap>
+
+    <!--
+        处理多对一映射关系方式二：association
+     -->
+    <resultMap id="empAndDeptResultMapTwo" type="org.example.entity.Employee">
+        <id property="id" column="eid"/>
+        <result property="empName" column="emp_name"/>
+        <result property="age" column="age"/>
+        <result property="sex" column="sex"/>
+        <result property="email" column="email"/>
+        <!-- association标签 -->
+        <association property="department" javaType="org.example.entity.Department">
+            <id property="id" column="did"/>
+            <result property="name" column="dept_name"/>
+        </association>
+    </resultMap>
+
+    <!--  -->
+    <select id="getEmployeeAndDeptById" resultMap="empAndDeptResultMapTwo">
+        select * from t_emp
+        left join t_dept
+            on t_emp.did = t_dept.did
+        where t_emp.eid = #{eid}
     </select>
 </mapper>
