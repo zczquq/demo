@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="org.example.mapper.DepartmentMapper">
+
+    <resultMap id="departmentResultMap" type="org.example.entity.Department">
+        <id property="id" column="did"/>
+        <result property="name" column="dept_name"/>
+    </resultMap>
+
+    <select id="getEmployeeAndDeptByStepTwo" resultMap="departmentResultMap">
+        select * from t_dept where did = #{did}
+    </select>
+
 </mapper>

@@ -66,32 +66,19 @@
         </association>
     </resultMap>
 
-    <!--
-        处理多对一映射关系方式三：association 分步查询
-
-     -->
-    <resultMap id="empAndDeptResultMapTH" type="org.example.entity.Employee">
-        <id property="id" column="eid"/>
-        <result property="empName" column="emp_name"/>
-        <result property="age" column="age"/>
-        <result property="sex" column="sex"/>
-        <result property="email" column="email"/>
-        <!-- association标签 -->
-        <association property="department" javaType="org.example.entity.Department">
-            <id property="id" column="did"/>
-            <result property="name" column="dept_name"/>
-        </association>
-    </resultMap>
-
     <!--  -->
     <select id="getEmployeeAndDeptById" resultMap="empAndDeptResultMapTwo">
         select * from t_emp
-        left join t_dept
-            on t_emp.did = t_dept.did
+                          left join t_dept
+                                    on t_emp.did = t_dept.did
         where t_emp.eid = #{eid}
     </select>
 
-    <!-- 分步查询员工信息 -->
+    <!--
+        处理多对一映射关系方式三：association 分步查询
+        两个sql查出数据
+        分步查询可以实现延迟加载
+     -->
     <resultMap id="empAndDeptByStepResultMap" type="org.example.entity.Employee">
         <id property="id" column="eid"/>
         <result property="empName" column="emp_name"/>
@@ -99,13 +86,10 @@
         <result property="sex" column="sex"/>
         <result property="email" column="email"/>
         <!-- association标签 -->
-        <association property="department" select="" column="did">
-            <id property="id" column="did"/>
-            <result property="name" column="dept_name"/>
-        </association>
+        <association property="department" select="org.example.mapper.DepartmentMapper.getEmployeeAndDeptByStepTwo" column="did"/>
     </resultMap>
 
-    <select id="getEmployeeAndDeptByStep" resultMap="empAndDeptByStepResultMap">
+    <select id="getEmployeeAndDeptByStepOne" resultMap="empAndDeptByStepResultMap">
         select * from t_emp where eid = #{eid}
     </select>
 </mapper>

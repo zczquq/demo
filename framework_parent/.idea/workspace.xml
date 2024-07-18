@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="204c45c6-9733-4df1-883e-ce63dfc01597" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_1/src/main/java/org/example/entity/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis_1/src/main/java/org/example/entity/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_1/src/main/java/org/example/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis_1/src/main/java/org/example/entity/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis_1/src/main/java/org/example/mapper/EmployeeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis_1/src/main/java/org/example/mapper/EmployeeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis_1/src/main/java/org/example/mapper/DepartmentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis_1/src/main/java/org/example/mapper/DepartmentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis_1/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis_1/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis_1/src/main/resources/org/example/mapper/DepartmentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis_1/src/main/resources/org/example/mapper/DepartmentMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis_1/src/main/resources/org/example/mapper/EmployeeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis_1/src/main/resources/org/example/mapper/EmployeeMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis_1/src/test/java/org/example/EmployeeMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis_1/src/test/java/org/example/EmployeeMapperTest.java" afterDir="false" />
     </list>
@@ -58,7 +55,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JUnit.EmployeeMapperTest.getAllEmp.executor": "Run",
+    "JUnit.EmployeeMapperTest.getEmployeeAndDeptByStepOne.executor": "Run",
     "JUnit.EmployeeMapperTest.testGetEmployeeAndDeptById.executor": "Run",
+    "JUnit.EmployeeMapperTest.testGetEmployeeAndDeptStepById.executor": "Run",
     "JUnit.ParameterMapperTest.testCheckLogin.executor": "Run",
     "JUnit.ParameterMapperTest.testCheckLoginByParam.executor": "Debug",
     "JUnit.ParameterMapperTest.testCheckLoginMap.executor": "Run",
@@ -130,7 +129,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EmployeeMapperTest.testGetEmployeeAndDeptById">
+  <component name="RunManager" selected="JUnit.EmployeeMapperTest.getEmployeeAndDeptByStepOne">
     <configuration name="EmployeeMapperTest.getAllEmp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis_1" />
       <extension name="coverage">
@@ -142,6 +141,22 @@
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.EmployeeMapperTest" />
       <option name="METHOD_NAME" value="getAllEmp" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeMapperTest.getEmployeeAndDeptByStepOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.EmployeeMapperTest" />
+      <option name="METHOD_NAME" value="getEmployeeAndDeptByStepOne" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -163,7 +178,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SQLMapperTest.testDeleteMore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmployeeMapperTest.testGetEmployeeAndDeptStepById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis_1" />
       <extension name="coverage">
         <pattern>
@@ -172,24 +187,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.SQLMapperTest" />
-      <option name="METHOD_NAME" value="testDeleteMore" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SQLMapperTest.testGetUserByTableName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis_1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.SQLMapperTest" />
-      <option name="METHOD_NAME" value="testGetUserByTableName" />
+      <option name="MAIN_CLASS_NAME" value="org.example.EmployeeMapperTest" />
+      <option name="METHOD_NAME" value="testGetEmployeeAndDeptStepById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -213,11 +212,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EmployeeMapperTest.getEmployeeAndDeptByStepOne" />
+        <item itemvalue="JUnit.EmployeeMapperTest.testGetEmployeeAndDeptStepById" />
         <item itemvalue="JUnit.EmployeeMapperTest.testGetEmployeeAndDeptById" />
         <item itemvalue="JUnit.EmployeeMapperTest.getAllEmp" />
         <item itemvalue="JUnit.SQLMapperTest.testInsertUser" />
-        <item itemvalue="JUnit.SQLMapperTest.testGetUserByTableName" />
-        <item itemvalue="JUnit.SQLMapperTest.testDeleteMore" />
       </list>
     </recent_temporary>
   </component>
@@ -276,6 +275,7 @@
       <workItem from="1721041393990" duration="1000" />
       <workItem from="1721097230282" duration="10029000" />
       <workItem from="1721177369867" duration="7417000" />
+      <workItem from="1721266586689" duration="7015000" />
     </task>
     <servers />
   </component>

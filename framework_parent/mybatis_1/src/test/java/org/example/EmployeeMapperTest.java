@@ -34,4 +34,12 @@ public class EmployeeMapperTest {
         EmployeeMapper employeeMapper = SqlSessionUtils.getSqlSession().getMapper(EmployeeMapper.class);
         System.out.println(employeeMapper.getEmployeeAndDeptById(2));
     }
+
+
+    @Test
+    public void getEmployeeAndDeptByStepOne() throws IOException {
+        EmployeeMapper employeeMapper = SqlSessionUtils.getSqlSession().getMapper(EmployeeMapper.class);
+        Employee employee = employeeMapper.getEmployeeAndDeptByStepOne(1);
+        System.out.println(employee.getDepartment());
+    }
 }
