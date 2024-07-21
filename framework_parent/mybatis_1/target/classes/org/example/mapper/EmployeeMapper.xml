@@ -78,6 +78,8 @@
         处理多对一映射关系方式三：association 分步查询
         两个sql查出数据
         分步查询可以实现延迟加载
+        fetchType:当在配置文件中开启了延迟加载后，可通过此属性手动控制是否使用延迟加载
+            lazy|eager：延迟|立即加载
      -->
     <resultMap id="empAndDeptByStepResultMap" type="org.example.entity.Employee">
         <id property="id" column="eid"/>
@@ -86,10 +88,21 @@
         <result property="sex" column="sex"/>
         <result property="email" column="email"/>
         <!-- association标签 -->
-        <association property="department" select="org.example.mapper.DepartmentMapper.getEmployeeAndDeptByStepTwo" column="did"/>
+        <association property="department"
+                     select="org.example.mapper.DepartmentMapper.getEmployeeAndDeptByStepTwo"
+                     column="did"
+                     fetchType="eager"/>
     </resultMap>
 
     <select id="getEmployeeAndDeptByStepOne" resultMap="empAndDeptByStepResultMap">
         select * from t_emp where eid = #{eid}
+    </select>
+
+
+    <!--
+        分步查询第二步：从部门获得did去员工表里查询对应的员工
+     -->
+    <select id="getDeptAndEmpByStepTwo" resultType="org.example.entity.Employee">
+        select * from t_emp where did = #{did}
     </select>
 </mapper>

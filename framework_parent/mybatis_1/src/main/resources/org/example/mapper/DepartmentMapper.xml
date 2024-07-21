@@ -11,4 +11,51 @@
         select * from t_dept where did = #{did}
     </select>
 
+    <!--
+        处理一对多的映射关系
+            1.collection
+            2.分步查询
+     -->
+    <resultMap id="getDeptAndEmpResultMap" type="Department">
+        <id property="id" column="did"/>
+        <result property="name" column="dept_name"/>
+        <!--
+            collection：用来处理一对多映射关系
+            ofType：表示该属性所对应的集合中存储的数据类型
+         -->
+        <collection property="employees" ofType="org.example.entity.Employee" javaType="java.util.List">
+            <id property="id" column="eid"/>
+            <result property="empName" column="emp_name"/>
+            <result property="age" column="age"/>
+            <result property="sex" column="sex"/>
+            <result property="email" column="email"/>
+        </collection>
+    </resultMap>
+
+    <select id="getDeptAndEmp" resultMap="getDeptAndEmpResultMap">
+        select * from t_dept td
+                 inner join t_emp te on td.did = te.did
+                 where td.did = #{did}
+    </select>
+
+    <resultMap id="getDeptAndEmpByStepOneResultMap" type="Department">
+        <id property="id" column="did"/>
+        <result property="name" column="dept_name"/>
+        <!-- column设置分布查询的条件 -->
+        <collection property="employees"
+                    select="org.example.mapper.EmployeeMapper.getDeptAndEmpByStepTwo"
+                    column="did">
+            <id property="id" column="eid"/>
+            <result property="empName" column="emp_name"/>
+            <result property="age" column="age"/>
+            <result property="sex" column="sex"/>
+            <result property="email" column="email"/>
+        </collection>
+    </resultMap>
+
+    <select id="getDeptAndEmpByStepOne" resultMap="getDeptAndEmpByStepOneResultMap">
+        select * from t_dept where did = #{did}
+    </select>
+
+
 </mapper>

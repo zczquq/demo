@@ -26,4 +26,6 @@ public interface EmployeeMapper {
      * @return
      */
     Employee getEmployeeAndDeptByStepOne(@Param("eid") Integer eid);
+
+    List<Employee> getDeptAndEmpByStepTwo(@Param("did") Integer did);
 }

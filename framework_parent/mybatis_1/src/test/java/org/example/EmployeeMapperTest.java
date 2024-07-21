@@ -1,6 +1,7 @@
 package org.example;
 
 import org.example.entity.Employee;
+import org.example.mapper.DepartmentMapper;
 import org.example.mapper.EmployeeMapper;
 import org.example.utils.SqlSessionUtils;
 import org.junit.Test;
@@ -40,6 +41,9 @@ public class EmployeeMapperTest {
     public void getEmployeeAndDeptByStepOne() throws IOException {
         EmployeeMapper employeeMapper = SqlSessionUtils.getSqlSession().getMapper(EmployeeMapper.class);
         Employee employee = employeeMapper.getEmployeeAndDeptByStepOne(1);
+        System.out.println(employee.getEmpName());
         System.out.println(employee.getDepartment());
     }
+
+
 }
