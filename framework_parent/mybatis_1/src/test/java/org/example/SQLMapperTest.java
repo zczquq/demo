@@ -9,7 +9,7 @@ public class SQLMapperTest {
     @Test
     public void testGetUserByUsername() throws Exception {
         SQLMapper sqlMapper = SqlSessionUtils.getSqlSession().getMapper(SQLMapper.class);
-        System.out.println(sqlMapper.getUserByUserName("z"));
+        System.out.println(sqlMapper.getUserByUserName("张三"));
     }
 
     @Test

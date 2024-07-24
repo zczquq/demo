@@ -3,10 +3,10 @@
 <mapper namespace="org.example.mapper.SQLMapper">
 
     <select id="getUserByUserName" resultType="User">
-        <!-- select * from user where username like '%${username}%' -->
+        select * from user where username like '%${username}%'
         <!-- select * from user where username like concat('%',#{username},'%') -->
         <!-- 第三种：双引号直接连接sql-->
-        select * from user where username like "%"#{username}"%"
+        <!-- select * from user where username like "%"#{username}"%" -->
     </select>
 
     <delete id="deleleMore">

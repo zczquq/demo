@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="mybatis-plus01" />
         <module name="order_sys" />
+        <module name="Mybatis_MBG" />
         <module name="swagger2" />
         <module name="mybatis" />
         <module name="springboot_02" />

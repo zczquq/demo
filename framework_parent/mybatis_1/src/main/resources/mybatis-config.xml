@@ -19,6 +19,7 @@
         <setting name="lazyLoadingEnabled" value="true"/>
         <!-- mybatis3.5.7默认false 当开启时任何方法的调用都会加载该对象的所有属性 -->
         <setting name="aggressiveLazyLoading" value="false"/>
+        <setting name="cacheEnabled" value="true"/>
     </settings>
 
     <typeAliases>

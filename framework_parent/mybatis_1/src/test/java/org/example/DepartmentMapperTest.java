@@ -21,6 +21,7 @@ public class DepartmentMapperTest {
     @Test
     public void testGetDeptAndEmpById2() throws IOException {
         DepartmentMapper departmentMapper = SqlSessionUtils.getSqlSession().getMapper(DepartmentMapper.class);
-        System.out.println(departmentMapper.getDeptAndEmpByStepOne(1));
+        // System.out.println(departmentMapper.getDeptAndEmpByStepOne(1));
+        System.out.println(departmentMapper.getDeptAndEmp(2).getName());
     }
 }

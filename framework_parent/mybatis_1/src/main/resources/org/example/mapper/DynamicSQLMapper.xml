@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.example.mapper.DynamicSQLMapper">
+
+    <!-- 对经常要写的sql片段进行封装 -->
+    <sql id="empColumns">
+        eid,emp_name,age,sex,email
+    </sql>
+
+    <select id="getEmployeeByCondition" resultType="org.example.entity.Employee">
+        select <include refid="empColumns"/> from t_emp
+        where 1 = 1
+            <if test="empName != null and empName != ''">
+                and emp_name = #{empName}
+            </if>
+            <if test="age != null and age != ''">
+                and age = #{age}
+            </if>
+            <if test="sex != null and sex != ''">
+                and sex = #{sex}
+            </if>
+            <if test="email != null and email != ''">
+                and email = #{email}
+            </if>
+    </select>
+
+    <select id="getEmployeeByConditionWhere" resultType="org.example.entity.Employee">
+        select * from t_emp
+        <where>
+            <if test="empName != null and empName != ''">
+                emp_name = #{empName}
+            </if>
+            <if test="age != null and age != ''">
+                and age = #{age}
+            </if>
+            <if test="sex != null and sex != ''">
+                and sex = #{sex}
+            </if>
+            <if test="email != null and email != ''">
+                and email = #{email}
+            </if>
+        </where>
+    </select>
+
+    <select id="getEmployeeByConditionTrim" resultType="org.example.entity.Employee">
+        select * from t_emp
+        <trim prefix="where" suffixOverrides="and|or">
+            <if test="empName != null and empName != ''">
+                emp_name = #{empName}
+            </if>
+            <if test="age != null and age != ''">
+                age = #{age} and
+            </if>
+            <if test="sex != null and sex != ''">
+                sex = #{sex} and
+            </if>
+            <if test="email != null and email != ''">
+                email = #{email} or
+            </if>
+        </trim>
+    </select>
+
+
+    <select id="getEmployeeByChoose" resultType="org.example.entity.Employee">
+        SELECT * FROM t_emp
+        <where>
+            <choose>
+                <!-- when 相当于if...else...有一个成立就不再继续判断了 -->
+                <when test="empName != null and empName != ''">
+                    emp_name = #{empName}
+                </when>
+                <when test="sex != null and sex != ''">
+                    sex = #{sex}
+                </when>
+                <when test="age != null and age != ''">
+                    age = #{empName}
+                </when>
+                <when test="empName != null and empName != ''">
+                    emp_name = #{empName}
+                </when>
+                <otherwise>
+                    did = 1
+                </otherwise>
+            </choose>
+        </where>
+    </select>
+
+    <!-- 批量删除写法一 -->
+    <!-- <delete id="deleteMoreByArray"> -->
+    <!--     delete from t_emp -->
+    <!--     where eid in -->
+    <!--         <foreach collection="eids" item="eid" separator="," open="(" close=")"> -->
+    <!--             #{eid} -->
+    <!--         </foreach> -->
+    <!-- </delete> -->
+
+    <!-- 批量删除写法二 -->
+    <delete id="deleteMoreByArray">
+        delete from t_emp
+        where
+            <foreach collection="eids" separator="or" item="eid">
+                eid = #{eid}
+            </foreach>
+    </delete>
+
+    <insert id="insertMoreByList" parameterType="org.example.entity.Employee">
+        insert into t_emp(emp_name, age, sex, email, did)
+        values
+            <foreach collection="employees" item="emp" separator=",">
+                (#{emp.empName},#{emp.age},#{emp.sex},#{emp.email},null)
+            </foreach>
+    </insert>
+
+</mapper>

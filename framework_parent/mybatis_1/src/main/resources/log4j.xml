@@ -15,6 +15,9 @@
     <logger name="org.apache.ibatis">
         <level value="info" />
     </logger>
+    <logger name="org.apache.ibatis.cache.decorators.Logging">
+        <level value="DEBUG" />
+    </logger>
     <root>
         <level value="debug" />
         <appender-ref ref="STDOUT" />
