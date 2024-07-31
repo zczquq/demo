@@ -19,6 +19,7 @@
         <module>mybatis</module>
         <module>javase</module>
         <module>mybatis_1</module>
+        <module>apache_poi_demo</module>
     </modules>
 
     <properties>

@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="mybatis-plus01" />
+        <module name="apache_poi_demo" />
         <module name="order_sys" />
         <module name="Mybatis_MBG" />
         <module name="swagger2" />
