@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #server:
 #  port: 8083
 #
@@ -18,4 +19,26 @@
 #  list: [王五, 李四, 赵六]
 #  dog:
 #    name: dou
+=======
+#server:
+#  port: 8083
+#
+#person:
+#  name: "张三"
+#  age: 27
+#  boss: false
+#  birth: 2020/02/10
+##  map: {k1: v1,k2: 12,k3: abc}
+#  map:
+#    k1: v1
+#    k2: 12
+#    k3: abc
+##  list:
+##    - 王五
+##    - 李四
+##    - 赵六
+#  list: [王五, 李四, 赵六]
+#  dog:
+#    name: dou
+>>>>>>> 67c1661c737215798a95e2007540ada4361fa4d5
 #    age: 4

@@ -1,12 +1,9 @@
 package org.example.study.bean;
 
 import lombok.Data;
-import org.hibernate.validator.constraints.Email;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
-import org.springframework.validation.annotation.Validated;
 
 import java.util.Date;
 import java.util.List;
@@ -22,13 +19,6 @@ import java.util.Map;
 @Data
 @PropertySource(value = {"classpath:person.properties"})
 @ConfigurationProperties(prefix = "person")
-
-/**
-    该注解可以对配置文件注入的值进行数据校验，必须使用@ConfigurationProperties注解注入值
-    @Validated
-    @Value不支持向封装的复杂类型注入值
-    如果我们编写了一个javaBean来和配置文件进行映射时，我们直接用@ConfigurationProperties
-*/
 public class Person {
 
     // @Value("${person.name}")
