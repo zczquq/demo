@@ -29,7 +29,7 @@ public class SpringBootConfigurationTest {
 
     @Test
     public void testHelloService() {
-        boolean b = applicationContext.containsBean("helloService");
+        boolean b = applicationContext.containsBean("getHelloService");
         System.out.println(b);
     }
 }

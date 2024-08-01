@@ -14,10 +14,12 @@ import java.util.Map;
  * @ConfigurationProperties : 告诉springboot将本类中的所有属性和配置文件中相关的配置进行绑定
  *  只有这个组件是容器中的组件，才能使用容器中提供的@ConfigurationProperties功能
  *  启动类要开启@EnableConfigurationProperties注解以启用@ConfigurationProperties注解的支持
+ *
+ * @PropertySource可以导入一些与springboot无关的配置
  */
 @Component
 @Data
-@PropertySource(value = {"classpath:person.properties"})
+// @PropertySource(value = {"classpath:person.properties"})
 @ConfigurationProperties(prefix = "person")
 public class Person {
 
