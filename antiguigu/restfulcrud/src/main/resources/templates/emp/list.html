@@ -50,13 +50,13 @@
 		<!-- th:replace 直接让抽取的标签替换到当前标签的位置 -->
 		<!-- th:include 直接让抽取的标签内部的所有元素插入到当前标签的内部 -->
 		<!-- 标签内写法可以不写~和{}，行内写法一定要写~{} -->
-		<div th:replace="commons/bar::topbar"></div>
+		<div th:replace="commons/bar::topbar(activeUrl='emps')"></div>
 
 		<div class="container-fluid">
 			<div class="row">
 
 				<!-- 引入sidebar -->
-				<div th:replace="commons/bar::#sidebar"></div>
+				<div th:replace="commons/bar::#sidebar(activeUrl='emps')"></div>
 				<main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
 					<h2>Section title</h2>
 					<div class="table-responsive">
@@ -71,117 +71,13 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr>
-									<td>1,001</td>
-									<td>Lorem</td>
-									<td>ipsum</td>
-									<td>dolor</td>
-									<td>sit</td>
-								</tr>
-								<tr>
-									<td>1,002</td>
-									<td>amet</td>
-									<td>consectetur</td>
-									<td>adipiscing</td>
-									<td>elit</td>
-								</tr>
-								<tr>
-									<td>1,003</td>
-									<td>Integer</td>
-									<td>nec</td>
-									<td>odio</td>
-									<td>Praesent</td>
-								</tr>
-								<tr>
-									<td>1,003</td>
-									<td>libero</td>
-									<td>Sed</td>
-									<td>cursus</td>
-									<td>ante</td>
-								</tr>
-								<tr>
-									<td>1,004</td>
-									<td>dapibus</td>
-									<td>diam</td>
-									<td>Sed</td>
-									<td>nisi</td>
-								</tr>
-								<tr>
-									<td>1,005</td>
-									<td>Nulla</td>
-									<td>quis</td>
-									<td>sem</td>
-									<td>at</td>
-								</tr>
-								<tr>
-									<td>1,006</td>
-									<td>nibh</td>
-									<td>elementum</td>
-									<td>imperdiet</td>
-									<td>Duis</td>
-								</tr>
-								<tr>
-									<td>1,007</td>
-									<td>sagittis</td>
-									<td>ipsum</td>
-									<td>Praesent</td>
-									<td>mauris</td>
-								</tr>
-								<tr>
-									<td>1,008</td>
-									<td>Fusce</td>
-									<td>nec</td>
-									<td>tellus</td>
-									<td>sed</td>
-								</tr>
-								<tr>
-									<td>1,009</td>
-									<td>augue</td>
-									<td>semper</td>
-									<td>porta</td>
-									<td>Mauris</td>
-								</tr>
-								<tr>
-									<td>1,010</td>
-									<td>massa</td>
-									<td>Vestibulum</td>
-									<td>lacinia</td>
-									<td>arcu</td>
-								</tr>
-								<tr>
-									<td>1,011</td>
-									<td>eget</td>
-									<td>nulla</td>
-									<td>Class</td>
-									<td>aptent</td>
-								</tr>
-								<tr>
-									<td>1,012</td>
-									<td>taciti</td>
-									<td>sociosqu</td>
-									<td>ad</td>
-									<td>litora</td>
-								</tr>
-								<tr>
-									<td>1,013</td>
-									<td>torquent</td>
-									<td>per</td>
-									<td>conubia</td>
-									<td>nostra</td>
-								</tr>
-								<tr>
-									<td>1,014</td>
-									<td>per</td>
-									<td>inceptos</td>
-									<td>himenaeos</td>
-									<td>Curabitur</td>
-								</tr>
-								<tr>
-									<td>1,015</td>
-									<td>sodales</td>
-									<td>ligula</td>
-									<td>in</td>
-									<td>libero</td>
+								<tr th:each="${emps}">
+									<td th:text="${emps.id}"></td>
+									<td>[[${emps.lastName}]]</td>
+									<td th:text="${emps.email}"></td>
+									<td th:text="${emps.gender}==0?'女':'男'"></td>
+									<td th:text="${emps.department}"></td>
+									<td th:text="${emps.birth}"></td>
 								</tr>
 							</tbody>
 						</table>
