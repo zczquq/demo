@@ -43,16 +43,14 @@ public class MyMvcConfig extends WebMvcConfigurerAdapter {
             @Override
             public void addInterceptors(InterceptorRegistry registry) {
                 // springboot已经做好静态资源映射，不需要在排除静态资源
-                registry.addInterceptor(new LoginHandlerInterceptor())
-                        .addPathPatterns("/**")
-                        .excludePathPatterns("/login","/login.html","/user/login","/");
+                //registry.addInterceptor(new LoginHandlerInterceptor())
+                //        .addPathPatterns("/**")
+                //        .excludePathPatterns("/login","/login.html","/user/login","/");
             }
         };
 
         return adapter;
     }
-
-
 
     @Bean
     public LocaleResolver localeResolver() {
